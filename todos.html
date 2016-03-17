@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	html,body,ul,li,p,div,h1 {
+		margin:0;
+		padding: 0;
+	}
+	body {
+		font:14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: 300;
+	}
+	li {
+		list-style-type: none;
+	}
+	a {
+		text-decoration: none;
+		color: #b83f45;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #787e7e;
+	}
+	#wrap {
+		width: 552px;
+		margin:0 auto;
+	}
+	#wrap h1 {
+		width: 100%;
+		font-size: 100px;
+		font-weight: 300;
+		text-align: center;
+		color: #ead7d7;
+
+	}
+	#wrap .top-text {
+		padding: 16px 16px 16px 60px;
+		font-size: 24px;
+		width: 100%;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    	color: #e6e6e6;  
+    	font-style: italic;
+    	font-weight: 300;
+	}
+
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+    	color: #e6e6e6;
+    	font-style: italic;
+    	font-weight: 300;
+	}
+
+	input:-ms-input-placeholder,
+	textarea:-ms-input-placeholder {
+    	color: #e6e6e6;
+    	font-style: italic;
+    	font-weight: 300;
+	}
+
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder {
+    	color: #e6e6e6;
+    	font-style: italic;
+    	font-weight: 300;
+	}
+
+	.content-box {
+		width: 100%;
+		padding: 16px 16px 16px 60px;
+	}
+	.foot-box li {
+		display: inline-block;
+		padding: 10px;
+	}
+
+	.foot-box {
+		margin-left: 180px;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>todos</h1>
+		<div id="container">
+			<form action="post">
+				<input class="top-text" type="text" placeholder="What needs to be done?">
+				<input class="content-box" type="text"><br />
+				<input class="content-box" type="text"><br />
+				<input class="content-box" type="text"><br />
+				<ul class="foot-box clearfix">
+					<li><a href="#">All</a></li>
+					<li><a href="#">Active</a></li>
+					<li><a href="#">Completed</a></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
