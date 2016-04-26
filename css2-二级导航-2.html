@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,45 +23,47 @@
 	body {
 		font:14px/1.5 '微软雅黑';
 	}
-	#nav {
-		background-color: #ccc;
-	}
-	#nav>ul>li {
-		float: left;
-		margin-left: 50px;
-		position: relative;
-		height: 50px;
-		line-height: 50px;
-	}
-	#nav>ul>li>a {
-		display: block;
-		padding: 0 10px;
-	}
-	#nav>ul>li>a:hover {
-		background-color: #fcc;
-		color: #fff;
-	}
 	.clearfix:after {
 		content: '';
 		display: block;
 		clear:both;
 	}
-	#nav>ul>li .child {
-		position: absolute;
-		top:50px;
-		left: 0;
+
+	#nav {
 		background-color: #ccc;
-		display: none;
 	}
-	#nav>ul>li .child li a{
+	
+	#nav>ul>li {
+		float: left;
+		height: 50px;
+		line-height: 50px;
+		position: relative;
+	}
+	#nav>ul>li>a {
 		display: block;
-		padding: 0 10px;
+		padding: 0 100px;
 	}
-	#nav>ul>li .child li a:hover {
+	#nav>ul>li>a:hover {
 		background-color: #fcc;
 		color: #fff;
 	}
-	#nav>ul>li:hover>.child {
+
+	#nav>ul>li>ul {
+		background-color: #ccc;
+		display: none;
+		position: absolute;
+		top: 50px;
+		left: 0;
+	}
+	#nav>ul>li>ul>li>a{
+		display: block;
+		padding: 0 100px;
+	}
+	#nav>ul>li>ul>li>a:hover {
+		background-color: #fcc;
+		color: #fff;
+	}
+	#nav>ul>li:hover>ul {
 		display: block;
 	}
 </style>
@@ -70,7 +73,7 @@
   <ul>
   	<li>
   	    <a href="#">前端</a>
-		<ul class="child">
+		<ul>
 			<li><a href="#">CSS</a></li>
 			<li><a href="#">html</a></li>
 			<li><a href="#">js</a></li>
@@ -78,7 +81,7 @@
   	</li>
   	<li>
   		<a href="#">服务端</a>
-  		<ul class="child">
+  		<ul>
 			<li><a href="#">CSS</a></li>
 			<li><a href="#">html</a></li>
 			<li><a href="#">js</a></li>
@@ -89,6 +92,6 @@
   	<li><a href="#">NODE</a></li>
   </ul>
 </div> 
-<p>hellodsdsdsdsdsd</p>
+<p>hello</p>
 </body>
 </html>
